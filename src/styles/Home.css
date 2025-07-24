@@ -1,0 +1,282 @@
+.home-page{
+  background-color: rgb(237, 242, 240);
+  margin-top: 7.5rem;
+ 
+}
+.about-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+/* optional, for text readability */
+}
+
+.about {
+  position: relative;
+  color: white;
+   height: 100vh; /* or 600px, 800px, etc. */
+ 
+}
+/* Add this to your main CSS or component CSS file */
+.rotating-glow {
+  display: inline-block;
+  animation: pulseGlow 2s infinite alternate, floatRotate 6s linear infinite;
+}
+/* Full-width and height video background */
+.domain-video-wrapper {
+  position: relative;
+  width: 500px; /* take full column width */
+  height: 600px;
+  height: auto;
+  border-radius: 10%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+margin-left: 100px;
+  display: flex;
+  justify-content: flex-end; /* align content (video) to right */
+}
+
+.domain-video-wrapper video {
+  width: 100%; /* or 120% based on how much you want to stretch */
+  max-width: none;
+  height: auto;
+  filter: brightness(1.2) contrast(1.1);
+  object-fit: cover;
+}
+
+
+/* Animated text container over video */
+.domain-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  z-index: 2;
+}
+
+/* Stylish animated domain text */
+.domain-box {
+  background-color: rgba(10, 10, 35, 0.7);
+  color: #00bfff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  animation: floatText 4s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+  transition: transform 0.4s ease;
+  text-transform: uppercase;
+}
+
+/* Floating animation */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+}
+
+.domain-button {
+  width: 150px;
+  height: 100px;
+  background-color:rgba(178, 173, 173, 0.4);
+  color: #060606;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  z-index: 0;
+}
+
+/* Glowing animated border (top & bottom sweep) */
+.domain-button::before,
+.domain-button::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 150%;
+  background: linear-gradient(100deg, transparent, #00bfff, transparent);
+  animation: sweep 2.5s linear infinite;
+}
+
+.domain-button::before {
+  top: 0;
+  left: -100%;
+}
+
+.domain-button::after {
+  bottom: 0;
+  left: -100%;
+  animation-delay: 1.25s;
+}
+
+@keyframes sweep {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Hover lift effect */
+.domain-button:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.6);
+}
+
+/* Optional: glowing hover edge boost */
+.domain-button:hover::before,
+.domain-button:hover::after {
+  background: linear-gradient(90deg, transparent, #00ffff, transparent);
+}
+
+.about .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* optional overlay */
+  z-index: 1;
+}
+.animate-fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+
+  background-color: rgba(234, 227, 227, 0.3); /* light transparent background */
+  backdrop-filter: blur(8px); /* apply background blur */
+  -webkit-backdrop-filter: blur(8px); /* for Safari */
+ border: 1px solid rgb(132, 132, 107);
+  margin-right: 100px;
+  padding: 15px; /* optional, to give space inside */
+  border-radius: 8px; /* optional for rounded edges */
+}
+
+
+.animate-zoomIn {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: zoomIn 1s forwards;
+}
+.why-us{
+  margin-top: 5rem;
+}
+/* Delay Classes */
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.course-card {
+  width: 200px;
+  background-color: rgb(23, 21, 21);
+  border: 2px solid #eee;
+  transition: 0.1s ease-in-out;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  border-color: #0d6efd;
+}
+.service-icon {
+  font-size: 30px;
+  color: rgb(100, 12, 93);
+  background-color: rgb(171, 171, 148);
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* ✅ this centers block elements */
+  width: 60px;     /* or adjust width */
+  height: 60px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container{
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+ margin: 20px;
+}
+.service-icon:hover{
+   transform: scale(1.1);
+  color: #ffc107;
+}
+
+
+.background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh; /* matches your .about height */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  /* opacity: 0.5; */
+  animation: zoomInOut 5s ease-in-out infinite;
+  transition: background-image 1s ease-in-out;
+}
+
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}

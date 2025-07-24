@@ -1,0 +1,22 @@
+.footer{
+    /* background-color: rgb(78, 39, 110); */
+    background-color: #24789c;
+ 
+ color: rgb(236, 233, 227);
+ max-height: 100%;
+ 
+}
+.footer-nav{
+     text-decoration: none;
+  color: inherit; /* optional: keeps the current text color */
+ 
+}
+.footer-nav a {
+  text-decoration: none;   /* Removes underline */
+  color: white;            /* Makes text white */
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffc107;          /* Optional: hover color (gold/yellow) */
+}

@@ -1,0 +1,14 @@
+.portfolio-card img {
+  height: 200px;
+  object-fit: cover;
+  
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.portfolio-container{
+    margin-top: 100px;
+    background-color: rgb(237, 242, 240);
+  
+}

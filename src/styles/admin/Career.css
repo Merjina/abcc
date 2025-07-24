@@ -1,0 +1,185 @@
+/* General Styles */
+.admin-career-page
+ {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  margin-left: 200px;
+  
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+/* Input and Add/Update Button in One Row */
+.add-opening-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-opening-form input {
+  flex: 1;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-opening-form button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Openings List in Single Row with Wrap */
+.openings-grid,
+.openings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Admin Opening Items */
+.opening-item-admin {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  min-width: 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.job-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.admin-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-btn-group button {
+  flex: 1;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-btn-group button:last-child {
+  background-color: #e74c3c;
+}
+
+/* User Opening Items */
+.opening-item {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.opening-item:hover {
+  transform: scale(1.03);
+  background-color: #d0e4f7;
+}
+
+.opening-icon {
+  font-size: 20px;
+}
+
+.opening-text {
+  font-size: 16px;
+}
+
+/* Application Form */
+.application-form {
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.application-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.application-form input,
+.application-form textarea {
+  flex: 1 1 45%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.application-form textarea {
+  flex: 1 1 100%;
+  height: 100px;
+  resize: vertical;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 100%;
+}
+
+.resume-upload {
+  flex: 1 1 100%;
+}
+
+/* Applications Cards */
+.application-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.application-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.application-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.application-table th,
+.application-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.application-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.application-table a {
+  color: #2980b9;
+  text-decoration: underline;
+}

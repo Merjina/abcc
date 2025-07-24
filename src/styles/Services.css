@@ -1,0 +1,28 @@
+.service-item {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(236, 139, 20);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+    background: linear-gradient(90deg, transparent, rgb(235, 236, 188));
+ color: rgb(22, 15, 15);
+}
+.service-container{
+  background-color: #e9e6dc;
+}
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #a2c7d6!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  
+}
+.service-icon:hover{
+   transform: scale(1.1);
+  color: #ffc107!important;
+ }

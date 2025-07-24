@@ -1,0 +1,105 @@
+.admin-internships {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 80vh;
+ margin-left: 40%;
+}
+
+.admin-internships h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Form Styling */
+.form-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Internship Cards */
+.internship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.internship-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.internship-card h4 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.internship-card p {
+  font-size: 14px;
+  color: #555;
+  min-height: 60px;
+}
+
+.internship-card img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.internship-card button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.internship-card button:first-child {
+  background-color: #ffc107;
+}
+
+.internship-card button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.internship-card button:last-child {
+  background-color: #dc3545;
+}
+
+.internship-card button:last-child:hover {
+  background-color: #c82333;
+}

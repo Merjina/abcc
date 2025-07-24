@@ -1,0 +1,48 @@
+.admin-login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #6ab3c3, #4ca1af);
+}
+
+.admin-login-form {
+  background: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #4a6c74;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.password-box {
+  border: 1px solid #e88b8b; 
+}
+
+.keep-logged-in {
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #4ca1af;
+  border: none;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #444;
+  cursor: pointer;
+}

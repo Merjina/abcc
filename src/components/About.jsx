@@ -104,7 +104,7 @@ function About() {
                 />
               </div>
               <div className="col-md-6 box-shade">
-                <ul className="list-group list-group-flush">
+                <ul className="list-group " style={{ backgroundColor:"rgb(237, 242, 240)"}}>
                   <li className="list-group-item" >High quality services and products that exceed customer expectations.</li>
                   <li className="list-group-item">Value for money.</li>
                   <li className="list-group-item">Courteous and pleasant service with professionalism and personalization.</li>

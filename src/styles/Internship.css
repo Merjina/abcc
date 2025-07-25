@@ -60,20 +60,73 @@
   background-color: #ffc107; /* fallback in case class is missing */
   cursor: pointer;
 }
-
-
-.apply-btn:hover {
-  background-color: #5e094c;
+.internship-grid {  
+  background-color: #efeeeb;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 2000px;
 }
-.internship-image {
-  width: 50%;              /* Full width of the column */
-  max-width: 300px;         /* Set a max width so all are uniform */
-  height: 200px;            /* Fixed uniform height */
-  object-fit: cover;        /* Fill the area without distortion */
-  border-radius: 6px;       /* Rounded corners */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  display: block;
-  margin-left: 250px;           /* Center the image */
+
+.internship-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.internship-card:hover{
+     background: linear-gradient(90deg, white, rgb(235, 236, 188));
+
+}
+.internship-card:hover {
+  transform: translateY(-6px);
+}
+
+.internship-card img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.internship-card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #002855;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.internship-card p {
+  font-size: 14px;
+  color: #444;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.internship-card button {
+  width: 100%;
+  background-color: #ffc107;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.internship-card button:hover {
+  background-color: #5e094c;
+  color: #fff;
 }
 
 /* Modal Styles */

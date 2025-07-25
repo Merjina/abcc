@@ -44,13 +44,13 @@ function Career() {
           {openings.map((job, index) => (
             <div
               key={index}
-              className="opening-item"
+              className="opening-item domain-button1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <span className="opening-icon">💼</span>
               <p className="opening-text">{job}</p>
-              <button className="sparkle-button" style={{height:"40px", width:"150px"}} onClick={() => handleOpeningClick(job)}>
-                Apply →<span className="stars">✨</span>
+              <button className="sparkle-button1" style={{height:"40px", width:"150px"}} onClick={() => handleOpeningClick(job)}>
+                Apply →<span className="stars"></span>
               </button>
               
             </div>

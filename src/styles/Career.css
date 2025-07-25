@@ -22,10 +22,10 @@
 }
 
 .opening-item {
-  background: #fff;
+
   padding: 20px 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 400px;
   text-align: center;
   animation: fadeInUp 0.4s ease forwards;
@@ -36,7 +36,47 @@
 .opening-item:hover {
   transform: translateY(-5px);
 }
+.sparkle-button1{
+position: relative;
+  background-color: #0b0e0e;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  background-clip: padding-box;
+  animation: glow-text 1.5s ease-in-out infinite alternate;
+  text-shadow:
+    0 0 5px #1e0a0a,
+    0 0 10px #121211,
+    0 0 20px #1e1e17,
+    0 0 30px #1f1e14;
+  transition: transform 0.3s;
+ 
+  border: none;
+}
 
+.sparkle-button1::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    120deg,
+    rgb(26, 26, 15),
+    rgb(167, 160, 166),
+    rgb(19, 18, 10)
+  );
+  background-size: 200%;
+  border-radius: 10px;
+  z-index: -1;
+  /* animation: border-run 2s linear infinite; */
+}
 @keyframes fadeInUp {
   from {
     transform: translateY(30px);
@@ -80,7 +120,7 @@
   padding: 10px;
   width: 90%;
   max-width: 800px;
-  margin-top: 150px;
+  margin-top: 200px!important;
   max-height: 70%;
   border-radius: 10px;
   position: relative;
@@ -113,6 +153,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.domain-button1 {
+  background-color: rgb(209, 209, 184)!important;
+ color:black;
+  border-radius: 20px;
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+ overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  z-index: 0;
 }
 
 .form-column {

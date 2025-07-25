@@ -18,7 +18,7 @@
 }
 
 .list-group-item {
-  background-color: transparent;
+  background-color:rgb(237, 242, 240)!important;
   border: none;
   font-size: 16px;
 }
@@ -51,7 +51,8 @@
   justify-content: center;
   align-items: center;
   height: 5vh; /* Full viewport height */
-  background-color: rgb(237, 242, 240); /* Optional */
+  background-color:rgb(237, 242, 240);
+  /* Optional */
 }
 
 /* Typewriter animation */

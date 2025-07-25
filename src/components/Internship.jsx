@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Internship.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,8 +7,7 @@ const internships = [
   {
     title: 'DATA ANALYST',
     description:
-      'This internship focuses on mastering Excel, SQL, Power BI, and Tableau. You’ll learn how to clean, transform, and visualize data. We also cover basic statistics essential for analysis. Through real-time projects, you’ll gain hands-on experience with datasets from various domains. Resume building and interview support are included.',
-    image: 'data.jpg',
+      "Learn Excel, SQL, Power BI, and Tableau to clean, analyze, and visualize data. This internship also covers basic statistics and real-time projects using datasets from different fields.",image: 'data.jpg',
   },
   {
     title: 'DATA SCIENTIST',
@@ -68,16 +67,33 @@ const internships = [
 
 function Internship() {
   const [showModal, setShowModal] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', mobile: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    passedout: '',
+    course: '',
+    message: '',
+  });
 
   const openModal = () => setShowModal(true);
   const closeModal = () => {
     setShowModal(false);
-    setFormData({ name: '', email: '', mobile: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      mobile: '',
+      passedout: '',
+      course: '',
+      message: '',
+    });
   };
 
   const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -86,34 +102,53 @@ function Internship() {
     closeModal();
   };
 
+  useEffect(() => {
+    if (showModal) {
+      window.scrollTo({ top: 100, behavior: 'smooth' });
+    }
+  }, [showModal]);
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const target = document.getElementById(id);
+      if (target) {
+        setTimeout(() => {
+          const yOffset = -100; // adjust this based on fixed nav height
+          const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }, 100); // slight delay to allow DOM to fully render
+      }
+    }
+  }, []);
+
+
   return (
     <>
       <Header />
-      <div className="internship-page py-5" style={{backgroundColor:"rgb(237, 242, 240)"}} >
+      <div className="internship-page py-5" style={{ backgroundColor: 'rgb(237, 242, 240)' }}>
         <div className="container">
-        <div className="typewriter-container">
-  <h2 className="typewriter">INTERNSHIP PROGRAMS</h2>
-</div>
-   {internships.map((item, index) => (
-            <div className="row align-items-center internship-row mb-5" key={index}>
-              <div className="col-md-6">
-                <h5 className="fw-bold text-uppercase intern-wave">{item.title}</h5>
+          <div className="typewriter-container">
+            <h2 className="typewriter">INTERNSHIP PROGRAMS</h2>
+          </div>
+
+          <div className="internship-grid col-md-12">
+            {internships.map((item, index) => (
+              <div
+                className="internship-card"
+                key={index}
+                id={item.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "")}
+              >
+                <img src={`/assets/${item.image}`} alt={item.title} className='internship-image' />
+                <h5>{item.title}</h5>
                 <p>{item.description}</p>
-                <button className="sparkle-button bg-warning" onClick={openModal}>
+                <button className="sparkle-button" onClick={openModal}>
                   Join Us → <span className="stars">✨</span>
                 </button>
-
               </div>
-              <div className="col-md-6 text-center">
-                <img
-                  src={`/assets/${item.image}`}
-                  alt={item.title}
-                  className="internship-image img-fluid"
-                />
-              </div>
+            ))}
+          </div>
 
-            </div>
-          ))}
 
           <div className="text-center mt-5">
             <h4 className="fw-bold mb-3">Website Design & Development Is Our Passion!</h4>
@@ -123,9 +158,11 @@ function Internship() {
       </div>
 
       {showModal && (
-        <div className="modal-overlay ">
+        <div className="modal-overlay">
           <div className="modal-content bg-white">
-            <button className="modal-close text-dark" onClick={closeModal}>×</button>
+            <button className="modal-close text-dark" onClick={closeModal}>
+              ×
+            </button>
             <h4 className="text-center mb-3 bg-white">Internship Application</h4>
             <form onSubmit={handleSubmit}>
               <input
@@ -152,19 +189,19 @@ function Internship() {
                 onChange={handleChange}
                 required
               />
-               <input
+              <input
                 type="text"
-                name="number"
+                name="passedout"
                 placeholder="Pass Out Year"
                 value={formData.passedout}
                 onChange={handleChange}
                 required
               />
-                <input
+              <input
                 type="text"
                 name="course"
-                placeholder="Applied internship"
-                value={formData.passedout}
+                placeholder="Applied Internship"
+                value={formData.course}
                 onChange={handleChange}
                 required
               />
@@ -175,7 +212,9 @@ function Internship() {
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit"  style={{height:"40px", width:"150px"}}  className="submit-btn sparkle-button">Submit <span className="stars">✨</span></button>
+              <button type="submit" style={{ height: '40px', width: '150px' }} className="submit-btn sparkle-button">
+                Submit <span className="stars">✨</span>
+              </button>
             </form>
           </div>
         </div>

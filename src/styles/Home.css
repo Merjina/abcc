@@ -289,3 +289,134 @@ margin-left: 100px;
   50% { transform: scale(1.07); }
   100% { transform: scale(1); }
 }
+/* ======= RESPONSIVE DESIGN (300px to 1500px+) ======= */
+
+/* For very small devices (≤ 575px) */
+@media (max-width: 575px) {
+  .domain-video-wrapper {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .animate-fadeInUp {
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .domain-button {
+    width: 100px;
+    height: 70px;
+    font-size: 0.8rem;
+  }
+
+  .course-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .about {
+    height: auto;
+    padding: 30px 10px;
+  }
+}
+
+/* Small devices (≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .domain-video-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .domain-button {
+    width: 120px;
+    height: 80px;
+  }
+
+  .course-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .animate-fadeInUp {
+    margin-right: 0;
+    padding: 15px;
+  }
+
+  .service-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}
+
+/* Medium devices (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .domain-video-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .course-card {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .animate-fadeInUp {
+    margin-right: 30px;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+/* Large devices (≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .domain-video-wrapper {
+    width: 500px;
+    margin-left: 50px;
+  }
+
+  .course-card {
+    width: 220px;
+  }
+
+  .domain-button {
+    width: 140px;
+    height: 90px;
+  }
+}
+
+/* Extra large devices (≥1200px and <1500px) */
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .domain-video-wrapper {
+    width: 500px;
+    margin-left: 80px;
+  }
+
+  .course-card {
+    width: 230px;
+  }
+}
+
+/* Ultra large screens (1500px and up) */
+@media (min-width: 1500px) {
+  .domain-video-wrapper {
+    width: 600px;
+    margin-left: 100px;
+  }
+
+  .course-card {
+    width: 250px;
+  }
+}

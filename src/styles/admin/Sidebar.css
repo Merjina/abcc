@@ -39,10 +39,10 @@
 }
 .admin-content {
   padding: 20px;
-  background-color: #f8f9fc;
+  background-color: rgb(237, 242, 240);
+ 
   min-height: 100vh;
 }
-
 .dashboard-heading {
   text-align: center;
   margin-bottom: 30px;

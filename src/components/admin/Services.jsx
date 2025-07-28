@@ -103,7 +103,7 @@ const Services = () => {
   return (
     <>
     <Sidebar />
-    <div className="admin-service-page">
+    <div className="admin-service-page ">
        <div className="typewriter-container">
   <h2 className="typewriter">MANAGE SERVICES</h2>
 </div>

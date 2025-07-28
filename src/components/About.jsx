@@ -12,7 +12,7 @@ function About() {
         <div className="container">
 
           {/* ABOUT TEAM WAHY */}
-          <section className="mb-5">
+          <section className="mb-4">
             <div className="typewriter-container">
               <h2 className="typewriter">ABOUT TEAM WAHY</h2>
             </div>
@@ -51,7 +51,7 @@ function About() {
               </div>
               <div className="col-md-6 box-shade">
                 <div className="card-body">
-                  <h5 className="card-title">Empowering the Future with Technology</h5>
+                  <h6 className="card-title mt-5">Empowering the Future with Technology</h6>
                   <p className="card-text">
                     At Wahy Lab Solutions, our vision is to bridge the gap between innovation
                     and opportunity. We aim to empower students, professionals, and businesses
@@ -98,13 +98,13 @@ function About() {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <img
-                  src="/assets/approach.webp"
+                  src="/assets/approach.png"
                   alt="Our Approach"
                   className="img-fluid rounded shadow" width={300} height={300}
                 />
               </div>
               <div className="col-md-6 box-shade">
-                <ul className="list-group " style={{ backgroundColor:"rgb(237, 242, 240)"}}>
+                <ul className="list-group mt-5" style={{ backgroundColor:"rgb(237, 242, 240)"}}>
                   <li className="list-group-item" >High quality services and products that exceed customer expectations.</li>
                   <li className="list-group-item">Value for money.</li>
                   <li className="list-group-item">Courteous and pleasant service with professionalism and personalization.</li>

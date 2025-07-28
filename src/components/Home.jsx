@@ -77,7 +77,7 @@ const Home = () => {
     '/assets/2nd.jpg',
     '/assets/7.jpg',
     '/assets/8.jpg',
-    '/assets/9.jpg',
+    '/assets/9.webp',
     '/assets/6.jpg',
   ];
 

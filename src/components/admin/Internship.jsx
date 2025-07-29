@@ -36,9 +36,12 @@ const AdminInternships = () => {
   <h2 className="" style={{marginRight:"20rem"}}>MANAGE INTERNSHIP</h2>
 </div>
  <div className="form-section">
+  <label>Title</label>
         <input name="title" placeholder="Title" value={formData.title} onChange={handleChange} />
+        <label>Description</label>
         <textarea name="description" placeholder="Description" value={formData.description} onChange={handleChange}></textarea>
-        <input name="image" placeholder="Image filename (e.g., java.jpg)" value={formData.image} onChange={handleChange} />
+        <label>Image</label>
+        <input type="file" name="image" placeholder="choose file" value={formData.image} onChange={handleChange} />
         <button onClick={handleAdd}>Add Internship</button>
       </div>
 

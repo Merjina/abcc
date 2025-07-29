@@ -18,6 +18,7 @@ import AdminServices from './components/admin/Services';
 import AdminCareer from './components/admin/Career';
 import AdminPortFolio from './components/admin/AdminPortFolio';
 import AppliedInterns from './components/admin/AppliedIntern';
+import Logout from './components/admin/Logout';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
   <Route path="/admin/services" element={<AdminServices />} />
   <Route path="/admin/contact" element={<AdminContact />} />
   <Route path="/admin/applied-interns" element={<AppliedInterns />} />
+  
+  <Route path="/" element={<Logout />} />
       </Routes>
     </Router>
   );

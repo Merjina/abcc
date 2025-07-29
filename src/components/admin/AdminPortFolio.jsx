@@ -39,9 +39,18 @@ const AdminPortFolio = () => {
 </div>
         {/* Form */}
         <form onSubmit={handleSubmit} className="portfolio-form">
+           <label>Title</label>
+            
           <input type="text" name="title" placeholder="Title" value={formData.title} onChange={handleChange} required />
+           <label>Description</label>
+            
           <input type="text" name="description" placeholder="Description" value={formData.description} onChange={handleChange} required />
-          <input type="text" name="image" placeholder="Image URL" value={formData.image} onChange={handleChange} required />
+             <label>Upload image:</label>
+                    
+           <input type="file" name="file" placeholder="choose file" value={formData.file} onChange={handleChange} required /> 
+                 
+              
+
           <button type="submit">{editId !== null ? 'Update' : 'Add'} Project</button>
         </form>
 

@@ -34,11 +34,7 @@ const services = [
     description: 'Wahy Host is one of the leading providers of a wide spectrum of domain services. We have vast experience to our aid, which we leverage to provide worldclass services to help enterprises scale new heights. Our core competencies include domain name registration, website hosting, email hosting, VPS hosting and more. We also offer various value-added services, such as WHOIS, DNS management, and premium domain sales, apart from promising comprehensive assistance to our customers.',
     icon: 'bi-hdd-network',
   },
-  {
-    title: 'VOIP & IVR SERVICES',
-    description: 'Voice over internet protocol (VoIP) technology continues to gain greater acceptance as a reliable communication solution that small and mid-sized enterprises (and even large corporations) rely upon. An IVR is a telephony menu system that allows segmentation and routing of callers to the most appropriate agents within your team. By recording customized welcome greetings you can provide a more personalized experience to your customers when they call on your business number.',
-    icon: 'bi-headset',
-  },
+ 
   {
     title: 'SOFTWARE TESTING',
     description: 'Software testing is the quality measures conducted to provide stakeholders with information about the quality of the product or service. Test techniques involve executing a program to identify software bugs and ensure its functionality.',

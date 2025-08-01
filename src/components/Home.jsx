@@ -53,10 +53,7 @@ const Home = () => {
       icon: <FaUsers />
     },
 
-    {
-      title: "VOIP AND IVR SERVICES", description: 'VoIP systems and custom IVR menus to improve customer service and routing.',
-      icon: <FaPhoneAlt />
-    },
+    
     {
       title: "CLOUD BASED SOLUTIONS", description: 'Cloud platforms that enable mobility, analytics, and social integration.',
       icon: <FaCloud />
